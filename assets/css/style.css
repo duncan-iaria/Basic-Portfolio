@@ -4,6 +4,17 @@ p
 	color: #777777
 }
 
+body
+{
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	background-color: grey;
+}
+
+h1, h2, h3, h4
+{
+	font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
 /*HEADER*/
 nav
 {
@@ -20,6 +31,62 @@ nav
 	background-color: #4aaaa5;
 }
 
+.header
+{
+	background-color: #ffffff;
+	width: 100%;
+	height: 75px;
+}
+
+/*MAIN*/
+.container
+{
+	margin: 0 auto;
+	width: 960px;
+}
+
+.main
+{
+	width: 650px;
+	float: left;
+	display: inline-block;
+}
+
+.content
+{
+	padding: 20px;
+}
+
+.main, .sidebar
+{
+	background-color: #ffffff;
+	display: inline-block;
+	padding: 0px;
+	margin-top: 10px;
+}
+
+/*SIDEBAR*/
+.sidebar
+{
+	width: 270px;
+	float: right;
+}
+
+/*FOOTER*/
+.footer
+{
+	position: absolute;
+	bottom: 0px;
+	height: 75px;
+	width: 100%;
+	background-color: #333;
+}
+
+/*DEBUG*/
+.debug
+{
+	border: 1px solid red;
+}
 /*=================================================================================================
    * Teal color (used for headings and backgrounds): `#4aaaa5`
    * Regular font color (used for paragraphs and all text besides the headings): `#777777`
