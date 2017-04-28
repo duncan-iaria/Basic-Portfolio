@@ -19,6 +19,23 @@ body
 h1, h2, h3, h4
 {
 	font-family: 'Georgia', Times, Times New Roman, serif;
+	color: #4aaaa5;
+	font-weight: bold;
+}
+
+h2
+{
+	font-size: 1.5em;
+}
+
+h3
+{
+	font-size: 1.333em;
+}
+
+a
+{
+	color: #666666;
 }
 
 /*HEADER*/
@@ -39,9 +56,9 @@ nav
 }
 
 /*links contained within the nav section*/
-.nav-main > a
+.nav-main > a:not(:last-child) /*this pseudo selector excludes the last item*/
 {
-	border-right: 2px #333 solid;
+	border-right: 2px #cccccc solid;
 	padding-right: 6px;
 }
 
@@ -72,7 +89,7 @@ nav
 .header-bg
 {
 	background-color: #fff;
-	border-bottom: 2px #333 solid;
+	border-bottom: 2px #cccccc solid;
 }
 
 /*MAIN*/
@@ -92,6 +109,7 @@ nav
 .content
 {
 	padding: 20px;
+	border: 1px #cccccc solid;
 }
 
 .main, .sidebar
@@ -102,11 +120,30 @@ nav
 	margin-top: 20px;
 }
 
+.content > img
+{
+	width: 200px;
+	margin-right: 10px;
+	float: left;
+}
+
 /*SIDEBAR*/
 .sidebar
 {
 	width: 270px;
 	float: right;
+}
+
+.social-icon
+{
+	width: 64px;
+	height: 64px;
+	display: inline-block;
+}
+
+.social-icon:not(:last-child) 
+{
+	margin-right: 14px;
 }
 
 /*FOOTER*/
@@ -116,7 +153,7 @@ nav
 	bottom: 0px;
 	height: 75px;
 	width: 100%;
-	background-color: #333;
+	background-color: #666666;
 	border-top: 6px #4aaaa5 solid;
 }
 
@@ -124,6 +161,7 @@ nav
 {
 	padding: 30px;
 	text-align: center;
+	color: #ccc;
 }
 
 /*DEBUG*/
