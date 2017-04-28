@@ -195,9 +195,45 @@ textarea
 	color: #bbb;
 }
 
-
-
 /*PORTFOLIO CONTENT*/
+.portfolio-item
+{
+	position: relative;
+	display: inline-block;
+	width: 275px;
+	height: 250px;
+	margin-bottom: 50px;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.portfolio-item:nth-child(odd)
+{
+	margin-right: 50px;
+}
+
+.portfolio-label
+{
+	position: absolute;
+	bottom: 20px;
+	height: 50px;
+	width: 100%;
+
+	background-color: #4aaaa5;
+}
+
+.portfolio-label-text > h2
+{
+	color: #ffffff;
+	font-weight: normal;
+}
+
+.portfolio-label-text
+{
+	text-align: center;
+	padding: 10px;
+}
+
 
 /*SIDEBAR*/
 .sidebar
@@ -221,8 +257,9 @@ textarea
 /*FOOTER*/
 .footer
 {
-	position: absolute;
+	position: fixed;
 	bottom: 0px;
+	left: 0px;
 	height: 75px;
 	width: 100%;
 	background-color: #666666;
