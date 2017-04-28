@@ -152,6 +152,50 @@ hr
 }
 
 /*CONTACT CONTENT*/
+label
+{
+	font-size: 1.2em;
+	font-weight: bold;
+	color: #666;
+}
+
+input
+{
+	margin: 10px 0px;
+	padding: 5px;
+	color: #bbb;
+}
+
+input[type=text], input[type=email]
+{
+	width: 98%;
+	border: 1px #dddddd solid;
+}
+
+input[type=text]:focus, input[type=email]:focus, textarea:focus
+{
+	outline: 1px #4aaaa5 solid;
+}
+
+input[type=submit]
+{
+	padding: 10px 20px;
+	background-color: #4aaaa5;
+	border: 0px;
+	color: #ffffff;
+	font-size: 1.5em;
+}
+
+textarea
+{
+	margin: 10px 0px;
+	width: 98%;
+	border: 1px #dddddd solid;
+	height: 200px;
+	color: #bbb;
+}
+
+
 
 /*PORTFOLIO CONTENT*/
 
