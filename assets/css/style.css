@@ -1,20 +1,24 @@
 /*GLOBAL*/
-p
+html
 {
-	color: #777777
-}
-
-h1
-{
-	font-size: 2em;
+	position: relative;
+	min-height: 100%;
 }
 
 body
 {
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	font-size: 14px;
+
+	margin: 0 0 75px; /*bottom value is current footer height*/
+
 	background-image: url( "../images/ignasi-pattern.png" );
 	background-color: grey;
-	font-size: 14px;
+}
+
+p
+{
+	color: #777777
 }
 
 h1, h2, h3, h4
@@ -22,6 +26,11 @@ h1, h2, h3, h4
 	font-family: 'Georgia', Times, Times New Roman, serif;
 	color: #4aaaa5;
 	font-weight: bold;
+}
+
+h1
+{
+	font-size: 2em;
 }
 
 h2
@@ -50,17 +59,19 @@ nav
 
 hr 
 {
-	border: 0;
-	border-top: 1px solid #cccccc;
-	height: 1px;
-
 	margin-top: 20px;
 	margin-bottom: 20px;
+	
+	height: 1px;
+
+	border: 0;
+	border-top: 1px solid #cccccc;
 }
 
 .nav-main
 {
 	position: absolute;
+
 	right: 0px;
 	top: 50%;
 	transform: translateY(-50%);
@@ -76,6 +87,7 @@ hr
 .nav-main > a
 {
 	margin-left: 20px;
+
 	font-size: 1.2em;
 	text-decoration: none;
 	color: #9e9d9e;
@@ -100,9 +112,9 @@ hr
 
 .header
 {
-	background-color: #ffffff;
 	width: 100%;
 	height: 75px;
+	background-color: #ffffff;
 }
 
 .header-bg
@@ -114,7 +126,7 @@ hr
 /*MAIN*/
 .container
 {
-	margin: 0 auto;
+	margin: 0 auto 0 auto;
 	width: 960px;
 }
 
@@ -122,7 +134,7 @@ hr
 {
 	width: 650px;
 	float: left;
-	display: inline-block;
+	margin-bottom: 100px;
 }
 
 .content
@@ -149,6 +161,25 @@ hr
 	display: inline-block;
 	padding: 0px;
 	margin-top: 20px;
+}
+
+/*SIDEBAR*/
+.sidebar
+{
+	width: 270px;
+	float: right;
+}
+
+.social-icon
+{
+	width: 64px;
+	height: 64px;
+	display: inline-block;
+}
+
+.social-icon:not(:last-child) 
+{
+	margin-right: 14px;
 }
 
 /*CONTACT CONTENT*/
@@ -180,18 +211,20 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus
 input[type=submit]
 {
 	padding: 10px 20px;
-	background-color: #4aaaa5;
+
+	font-size: 1.5em;
 	border: 0px;
 	color: #ffffff;
-	font-size: 1.5em;
+	background-color: #4aaaa5;
 }
 
 textarea
 {
 	margin: 10px 0px;
 	width: 98%;
-	border: 1px #dddddd solid;
 	height: 200px;
+
+	border: 1px #dddddd solid;
 	color: #bbb;
 }
 
@@ -200,9 +233,11 @@ textarea
 {
 	position: relative;
 	display: inline-block;
+
 	width: 275px;
 	height: 250px;
 	margin-bottom: 50px;
+
 	overflow: hidden;
 	cursor: pointer;
 }
@@ -210,6 +245,11 @@ textarea
 .portfolio-item:nth-child(odd)
 {
 	margin-right: 50px;
+}
+
+.portfolio-item:last-child
+{
+	margin-bottom: 0px;
 }
 
 .portfolio-label
@@ -234,34 +274,18 @@ textarea
 	padding: 10px;
 }
 
-
-/*SIDEBAR*/
-.sidebar
-{
-	width: 270px;
-	float: right;
-}
-
-.social-icon
-{
-	width: 64px;
-	height: 64px;
-	display: inline-block;
-}
-
-.social-icon:not(:last-child) 
-{
-	margin-right: 14px;
-}
-
 /*FOOTER*/
 .footer
 {
-	position: fixed;
+	margin-top: 200px;
+	position: absolute;
+
 	bottom: 0px;
 	left: 0px;
+
 	height: 75px;
 	width: 100%;
+
 	background-color: #666666;
 	border-top: 6px #4aaaa5 solid;
 }
@@ -269,8 +293,9 @@ textarea
 .footer-text
 {
 	padding: 30px;
+
 	text-align: center;
-	color: #ccc;
+	color: #cccccc;
 }
 
 /*DEBUG*/
