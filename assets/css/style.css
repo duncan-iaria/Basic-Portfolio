@@ -68,6 +68,14 @@ hr
 	border-top: 1px solid #cccccc;
 }
 
+
+header
+{
+	width: 100%;
+	height: 75px;
+	background-color: #ffffff;
+}
+
 .nav-main
 {
 	position: absolute;
@@ -110,13 +118,6 @@ hr
 	background-color: #4aaaa5;
 }
 
-.header
-{
-	width: 100%;
-	height: 75px;
-	background-color: #ffffff;
-}
-
 .header-bg
 {
 	background-color: #fff;
@@ -130,7 +131,7 @@ hr
 	width: 960px;
 }
 
-.main
+main
 {
 	width: 650px;
 	float: left;
@@ -155,7 +156,7 @@ hr
 	line-height: 20px;
 }
 
-.main, .sidebar
+main, aside
 {
 	background-color: #ffffff;
 	display: inline-block;
@@ -164,7 +165,7 @@ hr
 }
 
 /*SIDEBAR*/
-.sidebar
+aside
 {
 	width: 270px;
 	float: right;
@@ -275,7 +276,7 @@ textarea
 }
 
 /*FOOTER*/
-.footer
+footer
 {
 	margin-top: 200px;
 	position: absolute;
